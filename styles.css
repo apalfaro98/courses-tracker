@@ -1,0 +1,19 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.app {
+	width: 500px;
+	margin: 3rem auto;
+	background-color: #233452;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+}
