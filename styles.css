@@ -2,18 +2,53 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+fieldset {
+	border: none;
+}
+input {
+	border: none;
+	outline: none;
+	background-color: #1b212b;
+	padding: 0.5rem;
+	width: 100%;
+}
+
+button {
+	background-color: #00d26a;
+	border: none;
+	outline: none;
+	padding: 0.5rem 1rem;
+}
+
 .app {
 	width: 500px;
 	margin: 3rem auto;
+	padding: 1.5rem;
+	border-radius: 1rem;
 	background-color: #233452;
+	text-align: center;
 }
 
 .title {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
 .logo {
 	width: 60px;
 	height: 60px;
+}
+
+.formulary {
+	display: flex;
+}
+
+.title-course {
+	flex-grow: 1;
+	border-right: 3px solid #00d26a;
+}
+
+.hours {
+	flex-basis: 80px;
 }
