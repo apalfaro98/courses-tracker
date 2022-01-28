@@ -12,20 +12,15 @@ new Vue({
 	computed: {
 		totalTime() {
 			
-			let acum = 0;
-
-			if(this.courses.length == 0) return acum;
-
-			this.courses.forEach(e => {
-				acum = acum + e.time;
-			}); 
-
-			return acum;
+			if(this.courses.length == 0) return 0;
+			return this.courses.reduce((a, b) => a + parseInt(b.time), 0);
 		}
 	},
 
 	methods: {
 		addCourse() {
+			if (!this.title || !this.time) { return }
+
 			this.courses.push({
 				title: this.title,
 				time: parseInt(this.time),
