@@ -21,6 +21,10 @@ button {
 	padding: 0.5rem 1rem;
 }
 
+ol {
+	text-align: left;
+}
+
 .app {
 	width: 500px;
 	margin: 3rem auto;

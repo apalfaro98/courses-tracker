@@ -32,10 +32,10 @@
 			</fieldset>
 			<div>
 				<h3>Lista de Cursos</h3>
-				<p>Aun no has realizado cursos</p>
+				<p v-if="(courses.length == 0)">Aun no has realizado cursos</p>
 				<div>
 					<ol>
-						<!-- Lista de cursos -->
+						<li v-for="curso in courses">{{ curso.title }} - {{ curso.time }} horas </li>
 					</ol>
 					<hr />
 					<p>
