@@ -2,10 +2,21 @@ new Vue({
 	el: '#app',
 
 	data() {
-		return {};
+		return {
+			courses: [],
+			title: '',
+			time: 0,
+		};
 	},
 
 	computed: {},
 
-	methods: {},
+	methods: {
+		addCourse() {
+			this.courses.push({
+				title: this.title,
+				time: this.time,
+			})
+		}
+	},
 });

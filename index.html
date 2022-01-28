@@ -21,25 +21,25 @@
 			</div>
 			<fieldset class="formulary">
 				<p class="title-course">
-					<input type="text" placeholder="Titulo del curso" />
+					<input type="text" placeholder="Titulo del curso" v-model="title"/>
 				</p>
 				<p class="hours">
-					<input type="number" placeholder="Horas" />
+					<input type="number" placeholder="Horas" v-model="time"/>
 				</p>
 				<p>
-					<button>+</button>
+					<button v-on:click="addCourse">+</button>
 				</p>
 			</fieldset>
 			<div>
 				<h3>Lista de Cursos</h3>
-				<p class="red">Aun no has realizado cursos</p>
+				<p>Aun no has realizado cursos</p>
 				<div>
 					<ol>
 						<!-- Lista de cursos -->
 					</ol>
 					<hr />
 					<p>
-						Llevo <strong>{{ totalTime }}</strong> horas aprendiendo
+						Llevo <strong>{{  }}</strong> horas aprendiendo
 						en Platzi.
 						<b>#NuncaParesDeAprender 💚</b>
 					</p>

@@ -11,6 +11,7 @@ input {
 	background-color: #1b212b;
 	padding: 0.5rem;
 	width: 100%;
+	color: #fff;
 }
 
 button {
@@ -42,11 +43,11 @@ button {
 
 .formulary {
 	display: flex;
+	justify-content: center;
 }
 
 .title-course {
 	flex-grow: 1;
-	border-right: 3px solid #00d26a;
 }
 
 .hours {
