@@ -30,8 +30,8 @@ new Vue({
 				title: this.title,
 				time: parseInt(this.time),
 			});
-			title = '';
-			time = 0;
+			this.title = '';
+			this.time = 0;
 
 		}
 	},
