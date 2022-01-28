@@ -9,14 +9,30 @@ new Vue({
 		};
 	},
 
-	computed: {},
+	computed: {
+		totalTime() {
+			
+			let acum = 0;
+
+			if(this.courses.length == 0) return acum;
+
+			this.courses.forEach(e => {
+				acum = acum + e.time;
+			}); 
+
+			return acum;
+		}
+	},
 
 	methods: {
 		addCourse() {
 			this.courses.push({
 				title: this.title,
-				time: this.time,
-			})
+				time: parseInt(this.time),
+			});
+			title = '';
+			time = 0;
+
 		}
 	},
 });
